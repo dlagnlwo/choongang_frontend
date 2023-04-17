@@ -14,12 +14,12 @@
 }
 header {
     width: 100%; height: 200px;
-    border: 1px solid black;
+    border: 0px solid black;
 }
 header div {
     margin: 0 auto;
     width: 60%; height: 50px;
-    border: 1px solid black;
+    border: 0px solid black;
 }
 .top {
     margin-top: 20px;
@@ -31,22 +31,37 @@ header div {
 }
 .mid {
     display: flex;
+    justify-content: center;
     width: 40%; height: 60px;
+    border: 0px solid blue;
 }
 .mid p {
     width: 100%;
 }
 .mid p:first-child {
     text-align: center;
-    width: 30%; height: 60px;
+    width: 70%; height: 60px;
     line-height: 60px;
     font-size: 17px;
     border: none;
+}
+.mid p:nth-child(2) {
+    width: 100%; height: 90%;
+    line-height: 60px;
+    font-size: 20px;
+    background: #a1bef6; color: black;
+}
+.mid p:last-child {
+    margin: auto;
+    width: 30%;
+    text-align: center;
+    border-radius: 10px;
 }
 .mid input {
     margin-left: 0 auto;
     width: 100%; height: 100%;
     font-size: 17px;
+    border-radius: 10px;
 }
 .bottom {
     width: 20%; height: 50px;
@@ -56,19 +71,62 @@ header div {
 }
 section {
     width: 100%; height: 800px;
-    border: 1px solid black;
+    border: 0px solid black;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    background: #fcfcfc;
 }
 .sec1 div {
     margin-right: 10px;
     width: 20%; height: 300px;
-    border: 1px solid red;
+    line-height: 60px;
+    border: 0px solid red;
+    text-align: center;
+    cursor: pointer;
 }
 .sec1 div div:first-child {
     width: 100%; height: 80%;
+    line-height: 320px;
+    text-align: center;
+    color: #F9E7BF;
+    font-size: 2.5rem;
 }
 .sec1 div div:last-child {
-    width: 100%; height: 20%;
+    margin: auto;
+    width: 40%; height: 20%;
+    border: 0px solid red;
+    border-radius: 50px;
+    margin-top: 10px;
+    background: black; color: white;
+}
+.one div:first-child{
+    background: #F9E7BF;
+}
+.two div:first-child{
+    background: #FF6300;
+}
+.three div:first-child{
+    background: #e3c258;
+}
+.four div:first-child{
+    background: #f48b65;
+}
+.five div:first-child{
+    background: #e49292;
+}
+.six div:first-child{
+    background: #f0dea6;
+}
+.seven div:first-child{
+    background: #79b4de;
+}
+.eghit div:first-child{
+    background: #b3c8a6;
+}
+
+.sec1 img{
+    margin: auto;
+    line-height: 50px;
+    width: 25%; height: 40%;
 }
