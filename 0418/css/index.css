@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Black+Han+Sans&display=swap&subset=korean');
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0; padding: 0;
+    list-style: none; 
+    box-sizing: border-box;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+nav {
+    width: 100%;height: 50px;
+    display: flex;
+    justify-content: center;
+}
+nav div {
+    width: 10%; height: 100%;
+    text-align: center; line-height: 50px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+nav div:hover {
+    color: red;
+}
+.imgBox, .imgBox2 {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.imgBox li, .imgBox2 li {
+    width: 18%; height: 150px;
+    border: 1px solid #ccc;
+}
+.imgBox2 li {
+    height: 200px;
+}
+.imgBox2 li div{
+    width: 100%; height: 150px;
+    border: 0px solid red;
+}
+.imgBox2 li p{
+    width: 100%; height: 50px;
+    border: 0px solid blue;
+}
+/* -------------------------------------- */
+.layout {
+    width: 80%;
+    margin: 30px auto;
+    display: flex;
+    justify-content: space-between;
+}
+.layout ul {
+    border: 0px solid black;
+}
+.left {
+    height: 300px;
+    width: 20%;
+    cursor: pointer;
+}
+.left li {
+    width: 100%; height: 30%;
+    border: 1px solid #ccc;
+    margin-bottom: 16px;
+}
+.right {
+    width: 75%; height: 200px;
+}
+
+.right li {
+    width: 100%; height:50px;
+    border: 0px solid red;
+    cursor: pointer;
+    display: flex;
+}
+.right li img {
+    width: 100%; height: 100%;
+}
+.right li:first-child {
+    height: 300px;
+}
+.right li p {
+    text-align: center;
+    line-height: 50px;
+    border: 1px solid green;
+}
+.right li p:first-child {
+    width: 20%;
+}
+.right li p:last-child {
+    width: 80%;
+}
